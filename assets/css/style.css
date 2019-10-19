@@ -2,3 +2,26 @@ body {
     background-image: url("../images/basketball-court.jpg");
     background-size: cover;
 }
+
+.trivia-sec {
+    width: 60%;
+    margin-left: 22%;
+    margin-top: 10%;
+    background-color: silver;
+    height: 800px;
+}
+
+.title {
+    text-align: center;
+    font-size: 36px;
+    color: blue;
+    padding: 10px;
+}
+
+.question {
+    text-align: center;
+    font-size: 36px;
+    color: blue;
+    padding: 10px;
+}
+
