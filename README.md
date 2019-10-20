@@ -18,6 +18,7 @@ the game again and go for a better score.
 - HTML
 - CSS
 - Javascript
+- JQuery
 
 ### Game Link
 
