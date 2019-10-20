@@ -54,3 +54,10 @@ body {
     width: 50%;
 }
 
+.answerChoice {
+    font-size: 36px;
+    color: blue;
+    padding: 10px;
+    text-align: center;
+}
+

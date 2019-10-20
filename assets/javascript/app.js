@@ -41,6 +41,7 @@ let pick;
 let q;
 let unanswered = 0;
 
+
 // let timer = setInterval(myTimer, 2000);
 
 /////////////////Set a timer for the displayed questions///////////////////////////////////////////
@@ -58,7 +59,7 @@ function decrement(){
 
     if (time === -1){
         unanswered++;
-        $(".answerChoice").html("You ran out of time!!")
+        $(".answerChoice").html("You ran out of time!!");
         stop();
         
     }
@@ -76,24 +77,23 @@ function stop(){
 
 function questionDisplay(){
     q = Math.floor(Math.random()* questions.length);
-    pick = questions[q]
-    
-    for (let i = 0; i < questions.length; i++){
-    $(".question").text(pick.question);
-        
-        $("#A").text(pick.option[0]);
-        $("#B").text(pick.option[1]);
-        $("#C").text(pick.option[2]);
-        $("#D").text(pick.option[3]);
+    pick = questions[q];
+    $(".question").html(pick.question);
+    for (let i = 0; i < pick.question.length; i++){
+        $("#a").html(pick.option[0]);
+        $("#b").html(pick.option[1]);
+        $("#c").html(pick.option[2]);
+        $("#d").html(pick.option[3]);
 
     }
     }
 
 ////////////////Click function to select answer/////////////////
 
+
 $(".answer").on("click", function(){
-    userGuess = $(this).attr(".answerChoice");
-    if (userGuess === pick.answer){
+    userGuess = $(this).attr(pick.option);
+    if (userGuess === pick.option.answer){
         correct++;
         console.log(userGuess)
         console.log(correct)
