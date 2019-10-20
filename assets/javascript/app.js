@@ -115,10 +115,12 @@ $(".answer").on("click", function(){
 /////////////////////////Start the trivia///////////////////////////////
 
     function startTrivia(){
+        $(".choices").hide();
         $("#starter").text("Start Trivia");
         $("#starter").on("click", function(){
             $("#starter").hide();
             questionDisplay();
+            $(".choices").show();
             timer();
         })
         // timeUp();
