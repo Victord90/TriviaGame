@@ -1,63 +1,69 @@
 body {
-    background-image: url("../images/basketball-court.jpg");
-    background-size: cover;
+  background-image: url("../images/basketball-court.jpg");
+  background-size: cover;
 }
 
 .trivia-sec {
-    width: 60%;
-    margin-left: 22%;
-    margin-top: 10%;
-    background-color: silver;
-    height: 800px;
+  width: 60%;
+  margin-left: 22%;
+  margin-top: 10%;
+  background-color: silver;
+  height: 800px;
 }
 
 .title {
-    text-align: center;
-    font-size: 36px;
-    color: blue;
-    padding: 10px;
+  text-align: center;
+  font-size: 36px;
+  color: blue;
+  padding: 10px;
 }
 
 .question {
-    text-align: center;
-    font-size: 36px;
-    color: blue;
-    padding: 10px;
+  text-align: center;
+  font-size: 36px;
+  color: blue;
+  padding: 10px;
 }
 
 #starter {
-    margin-left: 25%;
-    margin-bottom: 15px;
-    position: relative;
-    text-align: center;
-    font-size: 24px;
-    color: black;
-    padding: 10px;
-    width: 50%;
+  margin-left: 25%;
+  margin-bottom: 15px;
+  position: relative;
+  text-align: center;
+  font-size: 24px;
+  color: black;
+  padding: 10px;
+  width: 50%;
 }
 
 #timer {
-    font-size: 36px;
-    color: blue;
-    padding: 10px;
-    text-align: center;
+  font-size: 36px;
+  color: blue;
+  padding: 10px;
+  text-align: center;
 }
 
-.answer {
-    margin-left: 25%;
-    margin-bottom: 15px;
-    position: relative;
-    text-align: center;
-    font-size: 24px;
-    color: black;
-    padding: 10px;
-    width: 50%;
+.choices {
+  margin-left: 4%;
+  margin-bottom: 15px;
+  position: relative;
+  text-align: center;
+  font-size: 24px;
+  color: black;
+  padding: 10px;
+  width: 50%;
 }
 
 .answerChoice {
-    font-size: 36px;
-    color: blue;
-    padding: 10px;
-    text-align: center;
+  font-size: 36px;
+  color: blue;
+  padding: 10px;
+  text-align: center;
 }
 
+.answerDiv {
+  text-align: center;
+  font-size: 36px;
+  color: blue;
+  padding: 10px;
+}
