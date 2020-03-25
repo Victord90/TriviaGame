@@ -1,27 +1,37 @@
 body {
-  background-image: url("../images/basketball-court.jpg");
+  background-image: url("../images/fullBackground.jpg");
   background-size: cover;
 }
 
-.trivia-sec {
+#trivia-sec {
+  /* background-image: url(../images/9bBtvR.jpg);
+  background-size: cover; */
   width: 60%;
-  margin-left: 22%;
+  margin-left: 20%;
   margin-top: 10%;
-  background-color: silver;
   height: 800px;
 }
 
+img {
+  opacity: 0.8;
+  width: 60%;
+  position: absolute;
+  height: auto;
+}
+
 .title {
+  position: relative;
   text-align: center;
   font-size: 36px;
-  color: blue;
+  color: silver;
   padding: 10px;
 }
 
 .question {
+  position: relative;
   text-align: center;
   font-size: 36px;
-  color: blue;
+  color: silver;
   padding: 10px;
 }
 
@@ -36,9 +46,10 @@ body {
   width: 50%;
 }
 
-#timer {
+.timer {
+  position: relative;
   font-size: 36px;
-  color: blue;
+  color: silver;
   padding: 10px;
   text-align: center;
 }
@@ -56,15 +67,16 @@ body {
 
 .answerChoice {
   font-size: 36px;
-  color: blue;
+  color: silver;
   padding: 10px;
   text-align: center;
 }
 
 .answerDiv {
+  position: relative;
   text-align: center;
   font-size: 36px;
-  color: blue;
+  color: silver;
   padding: 10px;
 }
 
@@ -77,4 +89,15 @@ body {
   color: black;
   padding: 10px;
   width: 50%;
+}
+
+button {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+button:hover {
+  background-color: #2140f0;
+  color: white;
 }

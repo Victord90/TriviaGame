@@ -75,7 +75,7 @@ $(document).ready(function() {
   }
 
   function decrement() {
-    $("#timer").html("Time Left: " + time);
+    $(".timer").html("Time Left: " + time);
     time--;
 
     if (time === -1) {
