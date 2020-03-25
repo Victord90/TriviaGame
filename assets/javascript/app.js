@@ -47,8 +47,6 @@ $(document).ready(function() {
   let unanswered = 0;
   let holder = [];
   let userGuess;
-  let newArray = [];
-  let index;
 
   // let timer = setInterval(myTimer, 2000);
 
@@ -150,6 +148,22 @@ $(document).ready(function() {
         timer();
         questionDisplay();
       }
-    }, 4000);
+    }, 3000);
   }
+
+  $("#reset").on("click", function() {
+    correct = 0;
+    wrong = 0;
+    unanswered = 0;
+    $("#reset").hide();
+    $(".answer").hide();
+    $(".choices").hide();
+    $(".answerDiv").hide();
+    $("#starter").hide();
+    questionDisplay();
+    timer();
+    for (let i = 0; i < questions.length; i++) {
+      holder.push(questions[i]);
+    }
+  });
 });
