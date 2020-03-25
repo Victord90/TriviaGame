@@ -39,7 +39,7 @@ $(document).ready(function() {
   let clockRunning = false;
   let qCount = questions.length;
   let intervalId;
-  let time = 20;
+  let time = 10;
   let correct = 0;
   let wrong = 0;
   let pick;
@@ -82,6 +82,8 @@ $(document).ready(function() {
       unanswered++;
       $(".answerDiv").html("You ran out of time!!");
       stop();
+      userGuess = "";
+      hidePic();
     }
   }
 
@@ -140,7 +142,7 @@ $(document).ready(function() {
     questions.splice(q, 1);
     setTimeout(function() {
       $(".answerDiv").empty();
-      time = 20;
+      time = 10;
 
       if (correct + wrong + unanswered === qCount) {
         $(".question").empty();
