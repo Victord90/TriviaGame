@@ -90,6 +90,14 @@ $(document).ready(function() {
     clearInterval(intervalId);
   }
 
+  function resetGame() {
+    $("#reset").hide();
+    $(".answer").hide();
+    $(".choices").hide();
+    $(".answerDiv").hide();
+    $("#starter").show();
+  }
+
   //////////////////Fucntion to display the questions and possible answers///////////////////////////////
 
   function questionDisplay() {
@@ -152,18 +160,13 @@ $(document).ready(function() {
   }
 
   $("#reset").on("click", function() {
-    correct = 0;
-    wrong = 0;
-    unanswered = 0;
     $("#reset").hide();
-    $(".answer").hide();
-    $(".choices").hide();
-    $(".answerDiv").hide();
-    $("#starter").hide();
-    questionDisplay();
-    timer();
-    for (let i = 0; i < questions.length; i++) {
-      holder.push(questions[i]);
+    $(".answerDiv").empty();
+    $(".question").empty();
+    for (let i = 0; i < holder.length; i++) {
+      questions.push(holder[i]);
     }
+    timer();
+    questionDisplay();
   });
 });
